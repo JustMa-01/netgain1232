@@ -1,52 +1,45 @@
-
 import { Link } from 'react-router-dom';
-import { ArrowRight, Globe, Server, Search, Megaphone, Smartphone, Code } from 'lucide-react';
+import { ArrowRight, Globe, Server, Search, Megaphone, Bot, Database } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const Services = () => {
   const services = [
     {
-      icon: Code,
+      icon: Globe,
       title: "Web Development",
-      description: "Custom websites and web applications built with modern technologies",
-      features: ["Responsive Design", "SEO Optimized", "Fast Loading", "Mobile-First"],
-      startingPrice: "₹5,000"
-    },
-    {
-      icon: Server,
-      title: "Hosting & Domain",
-      description: "Reliable hosting solutions with premium domain management",
-      features: ["99.9% Uptime", "SSL Certificate", "Daily Backups", "24/7 Support"],
-      startingPrice: "₹500/mo"
-    },
-    {
-      icon: Search,
-      title: "SEO & Maintenance",
-      description: "Keep your website optimized and running smoothly",
-      features: ["SEO Optimization", "Regular Updates", "Security Monitoring", "Performance Tuning"],
-      startingPrice: "₹500/mo"
+      description: "Custom-designed websites that are fast, responsive, and optimized for all devices. Whether you need a simple site or a complex web application, we've got you covered.",
+      features: ["Responsive Design", "SEO Optimized", "Fast Loading", "Mobile-First"]
     },
     {
       icon: Megaphone,
-      title: "Ad Campaigns",
-      description: "Strategic advertising across Meta, Google, and YouTube platforms",
-      features: ["Meta Ads", "Google Ads", "YouTube Ads", "Campaign Analytics"],
-      startingPrice: "₹3,000/mo"
+      title: "Online Ads Management",
+      description: "We manage and optimize your ad campaigns across platforms like Google, Facebook, and Instagram to drive results and maximize ROI.",
+      features: ["Google Ads", "Facebook Ads", "Instagram Ads", "ROI Optimization"]
     },
     {
-      icon: Smartphone,
-      title: "Social Media Management",
-      description: "Complete social media strategy and content management",
-      features: ["Content Creation", "Post Scheduling", "Engagement Management", "Analytics"],
-      startingPrice: "₹2,000/mo"
+      icon: Server,
+      title: "Hosting & Domain Setup",
+      description: "From registering your domain to setting up fast, reliable hosting—our team ensures your online presence is smooth, secure, and always live.",
+      features: ["Domain Registration", "Fast Hosting", "Security Setup", "24/7 Monitoring"]
     },
     {
-      icon: Globe,
-      title: "Digital Strategy",
-      description: "Comprehensive digital marketing and business growth planning",
-      features: ["Market Analysis", "Strategy Planning", "ROI Optimization", "Consulting"],
-      startingPrice: "Custom Quote"
+      icon: Database,
+      title: "Database Management",
+      description: "We provide robust database solutions including setup, optimization, maintenance, and security to ensure your data is handled safely and efficiently.",
+      features: ["Database Setup", "Optimization", "Maintenance", "Security"]
+    },
+    {
+      icon: Bot,
+      title: "AI Chatbots",
+      description: "Boost customer engagement with smart, conversational AI chatbots. We build bots tailored to your business that can handle FAQs, capture leads, and more.",
+      features: ["FAQ Handling", "Lead Capture", "24/7 Support", "Custom Training"]
+    },
+    {
+      icon: Search,
+      title: "Digital Marketing",
+      description: "Comprehensive digital marketing strategies including SEO, content creation, email marketing, and analytics to grow your audience and convert leads into customers.",
+      features: ["SEO Strategy", "Content Creation", "Email Marketing", "Analytics"]
     }
   ];
 
@@ -81,14 +74,11 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
-                <div className="flex items-center justify-between">
-                  <span className="text-amber-400 font-semibold">Starting from {service.startingPrice}</span>
-                  <Link to="/contact">
-                    <Button size="sm" variant="outline" className="glass-button">
-                      Get Quote
-                    </Button>
-                  </Link>
-                </div>
+                <Link to="/contact">
+                  <Button className="w-full glass-button">
+                    Get Started
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           ))}

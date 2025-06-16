@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Download, FileText, Tool, ArrowRight } from 'lucide-react';
+import { Download, FileText, Wrench, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -17,7 +17,7 @@ const Resources = () => {
       size: "2.4 MB"
     },
     {
-      icon: Tool,
+      icon: Wrench,
       title: "SEO Toolkit",
       description: "Essential tools and templates for SEO optimization",
       type: "Toolkit",

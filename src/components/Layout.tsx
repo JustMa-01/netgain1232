@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ArrowRight } from 'lucide-react';
@@ -43,7 +42,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <div className="w-8 h-8 bg-gradient-to-r from-amber-400 to-amber-600 rounded-lg flex items-center justify-center">
                 <span className="text-black font-bold text-sm">N</span>
               </div>
-              <span className="text-xl font-serif font-semibold text-white">Netgain</span>
+              <span className="text-xl font-serif font-semibold">
+                <span className="text-white">Net</span>
+                <span className="bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent font-bold">gain</span>
+              </span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -123,7 +125,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 <div className="w-8 h-8 bg-gradient-to-r from-amber-400 to-amber-600 rounded-lg flex items-center justify-center">
                   <span className="text-black font-bold text-sm">N</span>
                 </div>
-                <span className="text-xl font-serif font-semibold text-white">Netgain</span>
+                <span className="text-xl font-serif font-semibold">
+                  <span className="text-white">Net</span>
+                  <span className="bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent font-bold">gain</span>
+                </span>
               </div>
               <p className="text-gray-400 mb-4 max-w-md">
                 Scalable Tech. Royal Experience. Trusted Service. Building premium digital solutions for modern businesses.

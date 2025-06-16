@@ -80,6 +80,10 @@
     @apply bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent;
   }
   
+  .glass-input {
+    @apply bg-white/5 border-white/10 focus:border-amber-500/50 focus:ring-amber-500/20 text-white placeholder:text-gray-500 transition-all duration-300;
+  }
+  
   .hero-bg {
     background: 
       radial-gradient(circle at 20% 50%, rgba(29, 30, 76, 0.4) 0%, transparent 50%),

@@ -12,7 +12,7 @@ const Pricing = () => {
   const websitePlans = [
     {
       name: "Personal",
-      price: "₹5,000",
+      price: "Starts from ₹5,000",
       description: "Perfect for personal websites and portfolios",
       features: [
         "Up to 5 pages",
@@ -21,29 +21,29 @@ const Pricing = () => {
         "Contact form",
         "1 year free domain",
         "SSL certificate",
-        "Basic hosting (1 year)"
+        "Basic hosting (1 month)"
       ],
       popular: false
     },
     {
       name: "Business",
-      price: "₹15,000",
+      price: "Starts from ₹15,000",
       description: "Ideal for small to medium businesses",
       features: [
-        "Up to 15 pages",
+        "Up to 10 pages",
         "Custom design",
         "Advanced SEO optimization",
         "Contact & inquiry forms",
         "Social media integration",
         "Google Analytics setup",
-        "Premium hosting (1 year)",
+        "Premium hosting (3 months)",
         "Admin panel"
       ],
       popular: true
     },
     {
       name: "Professional",
-      price: "₹35,000",
+      price: "Starts from ₹35,000",
       description: "For large businesses and e-commerce",
       features: [
         "Unlimited pages",
@@ -52,7 +52,7 @@ const Pricing = () => {
         "Advanced SEO & speed optimization",
         "Custom features",
         "Priority support",
-        "Premium hosting (2 years)",
+        "Premium hosting (6 months)",
         "Advanced admin panel"
       ],
       popular: false
@@ -124,7 +124,7 @@ const Pricing = () => {
         {/* Website Development Plans */}
         <div className="mb-20">
           <h2 className="text-3xl font-serif font-bold text-white text-center mb-12">
-            Website Development
+            <span className="text-gradient">Web Development</span> Pricing
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {websitePlans.map((plan, index) => (
@@ -227,8 +227,67 @@ const Pricing = () => {
           </div>
         </div>
 
+        {/* Hosting Details Section */}
+        <div className="mb-20">
+          <h2 className="text-3xl font-serif font-bold text-white text-center mb-12">
+            Hosting <span className="text-gradient">Details</span>
+          </h2>
+          <div className="glass-card border-white/10 p-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center animate-slide-up">
+                <div className="w-16 h-16 bg-gradient-to-r from-royal-500 to-royal-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
+                    <rect x="2" y="5" width="20" height="14" rx="2" />
+                    <line x1="2" y1="10" x2="22" y2="10" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-2">Personal Plan</h3>
+                <p className="text-amber-400 font-medium mb-1">Basic Hosting</p>
+                <p className="text-gray-300">1 Month Included</p>
+              </div>
+              
+              <div className="text-center animate-slide-up" style={{ animationDelay: '100ms' }}>
+                <div className="w-16 h-16 bg-gradient-to-r from-amber-500 to-amber-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
+                    <rect x="2" y="5" width="20" height="14" rx="2" />
+                    <line x1="2" y1="10" x2="22" y2="10" />
+                    <path d="M6 15h4" />
+                    <path d="M14 15h4" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-2">Business Plan</h3>
+                <p className="text-amber-400 font-medium mb-1">Premium Hosting</p>
+                <p className="text-gray-300">3 Months Included</p>
+              </div>
+              
+              <div className="text-center animate-slide-up" style={{ animationDelay: '200ms' }}>
+                <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
+                    <rect x="2" y="5" width="20" height="14" rx="2" />
+                    <line x1="2" y1="10" x2="22" y2="10" />
+                    <path d="M6 15h4" />
+                    <path d="M14 15h4" />
+                    <path d="M6 18h4" />
+                    <path d="M14 18h4" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-2">Professional Plan</h3>
+                <p className="text-amber-400 font-medium mb-1">Premium Hosting</p>
+                <p className="text-gray-300">6 Months Included</p>
+              </div>
+            </div>
+            
+            <div className="mt-8 pt-8 border-t border-white/10 text-center">
+              <p className="text-gray-400">
+                All hosting plans include SSL certificates, daily backups, and 99.9% uptime guarantee.
+                Extended hosting packages available upon request.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* FAQ or Additional Info */}
-        <div className="text-center glass-card p-12 rounded-2xl">
+        <div className="text-center glass-card p-12 rounded-2xl mb-16">
           <h3 className="text-3xl font-serif font-bold text-white mb-4">
             Need a Custom Solution?
           </h3>
@@ -240,6 +299,22 @@ const Pricing = () => {
               Get Custom Quote <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </Link>
+        </div>
+        
+        {/* Contact Information */}
+        <div className="text-center glass-card p-8 rounded-2xl border-amber-400/30">
+          <h3 className="text-2xl font-serif font-bold text-white mb-4">
+            Contact Information
+          </h3>
+          <div className="flex items-center justify-center space-x-2 text-xl text-amber-400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span className="font-medium">Business Contact: 9347102347</span>
+          </div>
+          <p className="text-gray-400 mt-4">
+            For inquiries and custom quotes, feel free to call us or use the contact form.
+          </p>
         </div>
       </div>
     </div>

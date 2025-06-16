@@ -12,6 +12,8 @@ import Projects from "./pages/Projects";
 import Resources from "./pages/Resources";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import About from "./pages/About";
+import GetQuote from "./pages/GetQuote";
 import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 
@@ -32,6 +34,8 @@ const App = () => (
             <Route path="/resources" element={<Resources />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/get-quote" element={<GetQuote />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

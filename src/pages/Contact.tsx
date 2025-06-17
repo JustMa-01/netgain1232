@@ -76,7 +76,7 @@ const Contact = () => {
           <h1 className="text-5xl md:text-6xl font-serif font-bold text-white mb-6">
             Get a <span className="text-gradient">WhatsApp Quote</span>
           </h1>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto">
             Fill out the form and get an instant quote via WhatsApp. We'll respond quickly to discuss your project details.
           </p>
         </div>

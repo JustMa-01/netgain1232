@@ -116,7 +116,7 @@ const Pricing = () => {
           <h1 className="text-5xl md:text-6xl font-serif font-bold text-white mb-6">
             Simple <span className="text-gradient">Pricing</span>
           </h1>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto">
             Transparent pricing with no hidden fees. Choose the plan that fits your needs.
           </p>
         </div>

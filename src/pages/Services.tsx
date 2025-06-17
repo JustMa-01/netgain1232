@@ -51,7 +51,7 @@ const Services = () => {
           <h1 className="text-5xl md:text-6xl font-serif font-bold text-white mb-6">
             Our <span className="text-gradient">Services</span>
           </h1>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto">
             Comprehensive digital solutions designed to transform your business and accelerate growth.
           </p>
         </div>

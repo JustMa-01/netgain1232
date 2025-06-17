@@ -101,7 +101,7 @@ const Index = () => {
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
               Why Choose <span className="text-gradient">Netgain</span>?
             </h2>
-            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-2xl mx-auto">
               We combine cutting-edge technology with premium service to deliver exceptional results.
             </p>
           </div>

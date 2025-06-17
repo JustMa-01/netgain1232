@@ -144,7 +144,7 @@ const About = () => {
             <h2 className="text-4xl font-serif font-bold text-white mb-4">
               Our <span className="text-gradient">Values</span>
             </h2>
-            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-2xl mx-auto">
               At Netgain, we don't just offer services—we deliver experiences that feel like full meals for your business needs.
             </p>
           </div>
@@ -170,7 +170,7 @@ const About = () => {
             <h2 className="text-4xl font-serif font-bold text-white mb-4">
               Meet Our <span className="text-gradient">Team</span>
             </h2>
-            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-2xl mx-auto">
               The talented individuals behind Netgain's success.
             </p>
           </div>
@@ -200,7 +200,7 @@ const About = () => {
             <h2 className="text-4xl font-serif font-bold text-white mb-4">
               What Makes Us <span className="text-gradient">Different</span>
             </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               Netgain is not just a service provider or a product—it's a brand. A brand that exists to solve your business's digital problems while elevating your vision beyond what you imagine.
             </p>
           </div>

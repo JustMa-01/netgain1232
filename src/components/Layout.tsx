@@ -39,9 +39,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-amber-400 to-amber-600 rounded-lg flex items-center justify-center">
-                <span className="text-black font-bold text-sm">N</span>
-              </div>
+              <img 
+                src="/netgain-logo.png" 
+                alt="Netgain Logo" 
+                className="w-8 h-8 object-contain"
+              />
               <span className="text-xl font-serif font-semibold">
                 <span className="text-white">Net</span>
                 <span className="bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent font-bold">gain</span>
@@ -122,9 +124,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-amber-400 to-amber-600 rounded-lg flex items-center justify-center">
-                  <span className="text-black font-bold text-sm">N</span>
-                </div>
+                <img 
+                  src="/netgain-logo.png" 
+                  alt="Netgain Logo" 
+                  className="w-8 h-8 object-contain"
+                />
                 <span className="text-xl font-serif font-semibold">
                   <span className="text-white">Net</span>
                   <span className="bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent font-bold">gain</span>

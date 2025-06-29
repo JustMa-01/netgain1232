@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, ExternalLink, Globe } from 'lucide-react';
@@ -9,6 +8,12 @@ const Projects = () => {
       title: "FoodRest – Modern Restaurant UI",
       description: "A modern, responsive restaurant website showcasing UI design and smooth user experience. Built with performance and aesthetics in mind.",
       link: "https://foodrest11.netlify.app/",
+      category: "Web Development"
+    },
+    {
+      title: "EdgeStore – Modern Card Maker Platform",
+      description: "EdgeStore is a modern card maker website, allowing users to design, customize, and order personalized cards with an intuitive and seamless experience.",
+      link: "https://www.edgestore.in/",
       category: "Web Development"
     }
   ];

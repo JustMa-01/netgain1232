@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { ArrowRight, Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -104,7 +103,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-white font-semibold">Email</p>
-                    <p className="text-gray-400">hello@netgain.com</p>
+                    <p className="text-gray-400">mail.netgain@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">

@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, Star, Zap, Shield, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';

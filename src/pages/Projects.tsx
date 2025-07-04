@@ -14,7 +14,13 @@ const Projects = () => {
       title: "EdgeStore – Modern Card Maker Platform",
       description: "EdgeStore is a modern card maker website, allowing users to design, customize, and order personalized cards with an intuitive and seamless experience.",
       link: "https://www.edgestore.in/",
-      category: "Web Development"
+      category: "Web Tools"
+    },
+    {
+      title: "GoTools – Online PDF & Image Tools",
+      description: "A web platform offering a suite of tools for PDF editing, image compression, and more. Simplifies document and image management online.",
+      link: "https://gotools117.netlify.app/",
+      category: "Web Tools"
     }
   ];
 

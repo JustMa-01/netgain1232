@@ -14,7 +14,7 @@ const About = () => {
     },
     {
       name: "Maheswar",
-      role: "Co-Lead & Technical Specialist",
+      role: "Co-Founder & Tech Lead",
       image: "/placeholder.svg",
       bio: "As the second lead of Netgain, Maheswar plays a critical role in maintaining project quality and technical excellence."
     }

@@ -10,13 +10,15 @@ const About = () => {
       name: "Hemanth Anala",
       role: "Founder & Project Lead",
       image: "/placeholder.svg",
-      bio: "The visionary behind Netgain, Hemanth oversees all projects and operations with a passion for innovation and premium service."
+      bio: "The visionary behind Netgain, Hemanth oversees all projects and operations with a passion for innovation and premium service.",
+      linkedin: "https://www.linkedin.com/in/hemanth-anala-1739b7267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
     {
       name: "Maheswar",
       role: "Co-Founder & Tech Lead",
       image: "/placeholder.svg",
-      bio: "As the second lead of Netgain, Maheswar plays a critical role in maintaining project quality and technical excellence."
+      bio: "As the second lead of Netgain, Maheswar plays a critical role in maintaining project quality and technical excellence.",
+      linkedin: "https://www.linkedin.com/in/maheswar117?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     }
   ];
 
@@ -186,7 +188,12 @@ const About = () => {
                 </Avatar>
                 <h3 className="text-xl font-semibold text-white mb-1">{member.name}</h3>
                 <p className="text-amber-400 mb-3">{member.role}</p>
-                <p className="text-gray-400 text-sm">{member.bio}</p>
+                <p className="text-gray-400 text-sm mb-4">{member.bio}</p>
+                {member.linkedin && (
+                  <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center text-blue-500 hover:text-blue-700 transition-colors" aria-label={`LinkedIn profile of ${member.name}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.79-1.75-1.764 0-.974.784-1.764 1.75-1.764s1.75.79 1.75 1.764c0 .974-.784 1.764-1.75 1.764zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.597 2.001 3.597 4.6v5.596z"/></svg>
+                  </a>
+                )}
               </div>
             ))}
           </div>

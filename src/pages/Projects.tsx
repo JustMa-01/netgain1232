@@ -21,6 +21,18 @@ const Projects = () => {
       description: "A web platform offering a suite of tools for PDF editing, image compression, and more. Simplifies document and image management online.",
       link: "https://gotools117.netlify.app/",
       category: "Web Tools"
+    },
+    {
+      title: "LuxeCommerce – Premium E-commerce Store",
+      description: "A premium e-commerce store website with modern design and functionality. Perfect as a template for your Shopify store with advanced features and elegant UI.",
+      link: "https://luxecommercestore.netlify.app/",
+      category: "E-commerce"
+    },
+    {
+      title: "HustlersDen – Freelance Platform",
+      description: "A comprehensive freelance platform connecting clients with talented freelancers. Streamlined project management and secure payment processing for seamless collaboration.",
+      link: "https://hustlers-den.netlify.app/",
+      category: "Web Development"
     }
   ];
 

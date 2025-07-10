@@ -5,9 +5,9 @@ import { ArrowRight, ExternalLink, Globe } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "FoodRest – Modern Restaurant UI",
+      title: "Spicegarden – Modern Restaurant UI",
       description: "A modern, responsive restaurant website showcasing UI design and smooth user experience. Built with performance and aesthetics in mind.",
-      link: "https://foodrest11.netlify.app/",
+      link: "https://spicegarden.onrender.com",
       category: "Web Development"
     },
     {

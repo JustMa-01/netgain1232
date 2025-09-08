@@ -5,9 +5,9 @@ import { ArrowRight, ExternalLink, Globe } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "Spicegarden – Modern Restaurant UI",
-      description: "A modern, responsive restaurant website showcasing UI design and smooth user experience. Built with performance and aesthetics in mind.",
-      link: "https://spicegarden.onrender.com",
+      title: "KPSilks – Simple Shopping Catelogue",
+      description: "A modern, responsive catelogue website showcasing UI design and smooth user experience. Built with performance and aesthetics in mind.",
+      link: "https://kanchipuramsilks.netlify.app/",
       category: "Web Development"
     },
     {

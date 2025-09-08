@@ -46,7 +46,7 @@ const Pricing = () => {
       price: "Starts from ₹35,000",
       description: "For large businesses and e-commerce",
       features: [
-        "Unlimited pages",
+        "upto 50 pages",
         "E-commerce functionality",
         "Payment gateway integration",
         "Advanced SEO & speed optimization",

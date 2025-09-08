@@ -11,10 +11,10 @@ const Projects = () => {
       category: "Web Development"
     },
     {
-      title: "EdgeStore – Modern Card Maker Platform",
-      description: "EdgeStore is a modern card maker website, allowing users to design, customize, and order personalized cards with an intuitive and seamless experience.",
-      link: "https://www.edgestore.in/",
-      category: "Web Tools"
+      title: "Aura – Modern Ecommerce Catelogue",
+      description: "Aura is a modern Shopping website, allowing users to search, find, and order the products through Whatsapp.",
+      link: "https://netgainecom.netlify.app/",
+      category: "Web Development"
     },
     {
       title: "GoTools – Online PDF & Image Tools",

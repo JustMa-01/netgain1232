@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Users, Shield, Heart, Target, Sparkles, Award, TrendingUp, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Users, Shield, Heart, Target, Sparkles, Award, TrendingUp, CircleCheck as CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';

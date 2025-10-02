@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle, Users, Shield, Heart, Sparkles, Crown } from 'lucide-react';
+import { ArrowRight, Users, Shield, Heart, Target, Sparkles, Award, TrendingUp, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -10,126 +10,146 @@ const About = () => {
       name: "Hemanth Anala",
       role: "Founder & Project Lead",
       image: "/placeholder.svg",
-      bio: "The visionary behind Netgain, Hemanth oversees all projects and operations with a passion for innovation and premium service.",
+      bio: "Visionary leader driving Netgain's innovation and commitment to exceptional digital solutions.",
       linkedin: "https://www.linkedin.com/in/hemanth-anala-1739b7267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
     {
       name: "Maheswar",
       role: "Co-Founder & Tech Lead",
       image: "/placeholder.svg",
-      bio: "As the second lead of Netgain, Maheswar plays a critical role in maintaining project quality and technical excellence.",
+      bio: "Technical excellence and quality assurance expert ensuring every project exceeds expectations.",
       linkedin: "https://www.linkedin.com/in/maheswar117?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     }
   ];
 
   const milestones = [
     {
-      year: "2025",
-      title: "Company Founded",
-      description: "Netgain was established by Hemanth Anala with a vision to become a one-stop solution for all technical needs."
+      icon: Target,
+      year: "Q1 2025",
+      title: "Founded Netgain",
+      description: "Established with a vision to become the go-to solution for modern digital needs"
     },
     {
-      year: "2025",
-      title: "First Demo Project",
-      description: "Completed our first successful demo project: FoodRest Restaurant UI."
+      icon: Award,
+      year: "Q1 2025",
+      title: "First Success",
+      description: "Completed FoodRest Restaurant UI, setting the standard for quality delivery"
     },
     {
-      year: "2025",
-      title: "Team Formation",
-      description: "Building a strong, passionate team with complementary skills and shared vision."
+      icon: Users,
+      year: "Q2 2025",
+      title: "Team Growth",
+      description: "Built a passionate team with complementary skills and shared vision"
     },
     {
-      year: "2025",
+      icon: TrendingUp,
+      year: "Q2 2025",
       title: "Service Expansion",
-      description: "Expanding our services from web development to digital marketing and beyond."
+      description: "Broadened offerings from web development to comprehensive digital solutions"
     }
   ];
 
   const values = [
     {
       icon: Shield,
-      title: "Trust",
-      description: "We build relationships that last, founded on reliability and transparency."
+      title: "Trust & Reliability",
+      description: "We build lasting relationships founded on transparency, consistency, and dependability."
     },
     {
       icon: Heart,
-      title: "Purity",
-      description: "Our work is authentic, honest, and tailored with care for each client's unique needs."
+      title: "Authentic Quality",
+      description: "Every project is crafted with genuine care and attention to detail, tailored uniquely for you."
     },
     {
       icon: Users,
-      title: "Loyalty",
-      description: "We treat our clients like long-term partners, not just customers."
-    },
-    {
-      icon: Crown,
-      title: "Luxury & Premium",
-      description: "Every touchpoint reflects excellence and elegance in service delivery."
+      title: "Partnership Mindset",
+      description: "We treat every client as a long-term partner, invested in your sustained success."
     },
     {
       icon: Sparkles,
-      title: "Innovation",
-      description: "We transform ideas into powerful digital outcomes that exceed expectations."
+      title: "Continuous Innovation",
+      description: "Staying ahead with cutting-edge technology and creative solutions that deliver results."
     }
   ];
 
   return (
-    <div className="relative">
-      {/* Hero Section */}
-      <section className="hero-bg py-32 flex items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/40"></div>
-        
-        {/* Floating Animation Elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-amber-500/20 rounded-full blur-xl animate-float"></div>
-        <div className="absolute bottom-20 right-10 w-32 h-32 bg-royal-500/20 rounded-full blur-xl animate-float" style={{ animationDelay: '1s' }}></div>
+    <div className="relative overflow-hidden">
+      <section className="relative py-32">
+        <div className="hero-bg absolute inset-0"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6">
-              About <span className="text-gradient">Netgain</span>
+        <div className="absolute top-20 left-10 w-32 h-32 bg-cyan-400/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-teal-400/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-6 animate-fade-in">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-cyan-500/10 to-teal-500/10 border border-cyan-400/20 backdrop-blur-sm">
+              <Sparkles className="h-4 w-4 text-cyan-400" />
+              <span className="text-sm font-medium text-cyan-400">Our Story</span>
+            </div>
+
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-tight">
+              Building the <span className="text-gradient">Future Together</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Our story, our team, and our mission to deliver exceptional digital experiences.
+
+            <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+              A team driven by passion, excellence, and the mission to transform digital experiences.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Our Story Section */}
-      <section className="py-20 relative">
+      <section className="relative py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="animate-slide-up">
-              <h2 className="text-4xl font-serif font-bold text-white mb-6">
-                Our <span className="text-gradient">Story</span>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8 animate-slide-in-left">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-cyan-500/10 to-teal-500/10 border border-cyan-400/20 backdrop-blur-sm">
+                <CheckCircle2 className="h-4 w-4 text-cyan-400" />
+                <span className="text-sm font-medium text-cyan-400">Who We Are</span>
+              </div>
+
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-white leading-tight">
+                More Than a Service
+                <br />
+                <span className="text-gradient">We're a Brand</span>
               </h2>
-              <p className="text-gray-400 mb-4">
-                Netgain was founded in 2025 by Hemanth Anala with a bold vision—to become a one-stop solution for all technical needs that modern businesses face. What began as a passion project has quickly evolved into a premium digital services brand known for innovation, quality, and trust.
-              </p>
-              <p className="text-gray-400 mb-4">
-                Our journey started with a single demo project, built not just to showcase our capabilities, but to set the tone for the kind of service we deliver—complete, strategic, and premium. From that very first project, our focus has been on transforming ideas into digital realities that are clearer, more powerful, and more valuable than what our clients first imagined.
-              </p>
-              <p className="text-gray-400 mb-6">
-                We're not just a service provider or a product—we're a brand. A brand that exists to solve your business's digital problems while elevating your vision beyond what you imagine.
-              </p>
-              <div className="flex items-center text-sm text-gray-400">
-                <CheckCircle className="h-4 w-4 text-green-400 mr-2" />
-                Affordable. Reliable. Scalable.
+
+              <div className="space-y-4 text-lg text-slate-300 leading-relaxed">
+                <p>
+                  Founded in 2025 by Hemanth Anala, Netgain emerged from a bold vision: to become the ultimate one-stop solution for every technical challenge modern businesses face.
+                </p>
+                <p>
+                  What started as a passion project has rapidly evolved into a premium digital services brand, recognized for innovation, quality, and unwavering trust.
+                </p>
+                <p>
+                  We're not just another service provider. We exist to solve your digital problems while elevating your vision beyond what you first imagined.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-3 glass-card p-5 rounded-xl border-white/[0.08]">
+                <CheckCircle2 className="h-6 w-6 text-cyan-400 flex-shrink-0 mt-0.5" />
+                <div>
+                  <h3 className="text-white font-semibold mb-1">Our Promise</h3>
+                  <p className="text-slate-400 text-sm">
+                    Affordable. Reliable. Scalable. Every project delivered with excellence.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="glass-card border-white/10 p-8 animate-slide-up" style={{ animationDelay: '200ms' }}>
-              <h3 className="text-2xl font-serif font-bold text-white mb-6">Company Milestones</h3>
+
+            <div className="glass-card p-8 rounded-2xl border-white/[0.08] animate-slide-in-right">
+              <h3 className="text-2xl font-display font-bold text-white mb-8">Journey Milestones</h3>
               <div className="space-y-6">
                 {milestones.map((milestone, index) => (
-                  <div key={index} className="flex">
-                    <div className="mr-4">
-                      <div className="w-12 h-12 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 flex items-center justify-center text-black font-bold">
-                        {milestone.year.substring(2)}
+                  <div key={index} className="flex gap-4 group">
+                    <div className="flex-shrink-0">
+                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-cyan-500/20 to-teal-500/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <milestone.icon className="h-6 w-6 text-cyan-400" />
                       </div>
                     </div>
-                    <div>
-                      <h4 className="text-white font-semibold">{milestone.title}</h4>
-                      <p className="text-gray-400 text-sm">{milestone.description}</p>
+                    <div className="flex-1">
+                      <div className="text-xs font-medium text-cyan-400 mb-1">{milestone.year}</div>
+                      <h4 className="text-white font-semibold mb-1">{milestone.title}</h4>
+                      <p className="text-slate-400 text-sm leading-relaxed">{milestone.description}</p>
                     </div>
                   </div>
                 ))}
@@ -139,25 +159,39 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Values Section */}
-      <section className="py-20 bg-royal-900/30">
+      <section className="relative py-24 bg-gradient-to-b from-transparent via-slate-950/30 to-transparent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-serif font-bold text-white mb-4">
-              Our <span className="text-gradient">Values</span>
+          <div className="text-center mb-16 animate-fade-in">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-cyan-500/10 to-teal-500/10 border border-cyan-400/20 backdrop-blur-sm mb-6">
+              <Heart className="h-4 w-4 text-cyan-400" />
+              <span className="text-sm font-medium text-cyan-400">Our Values</span>
+            </div>
+            <h2 className="section-title">
+              What <span className="text-gradient">Drives Us</span>
             </h2>
-            <p className="text-xl text-gray-200 max-w-2xl mx-auto">
-              At Netgain, we don't just offer services—we deliver experiences that feel like full meals for your business needs.
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+              Our core values shape every decision, interaction, and project we undertake.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <Card key={index} className="glass-card border-white/10 hover:border-amber-400/50 transition-all duration-300 animate-slide-up" style={{ animationDelay: `${index * 200}ms` }}>
-                <CardContent className="p-8 text-center">
-                  <value.icon className="h-12 w-12 text-amber-400 mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold text-white mb-3">{value.title}</h3>
-                  <p className="text-gray-400">{value.description}</p>
+              <Card
+                key={index}
+                className="glass-card border-white/[0.08] hover:border-cyan-400/30 transition-all duration-500 group animate-slide-up"
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                <CardContent className="p-8 text-center space-y-4">
+                  <div className="relative inline-block">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-teal-500/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 mx-auto">
+                      <value.icon className="h-8 w-8 text-cyan-400" />
+                    </div>
+                    <div className="absolute inset-0 w-16 h-16 rounded-2xl bg-cyan-400/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                  <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors duration-300">
+                    {value.title}
+                  </h3>
+                  <p className="text-slate-400 text-sm leading-relaxed">{value.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -165,82 +199,133 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-20">
+      <section className="relative py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-serif font-bold text-white mb-4">
-              Meet Our <span className="text-gradient">Team</span>
+          <div className="text-center mb-16 animate-fade-in">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-cyan-500/10 to-teal-500/10 border border-cyan-400/20 backdrop-blur-sm mb-6">
+              <Users className="h-4 w-4 text-cyan-400" />
+              <span className="text-sm font-medium text-cyan-400">Meet the Team</span>
+            </div>
+            <h2 className="section-title">
+              The People Behind <span className="text-gradient">Netgain</span>
             </h2>
-            <p className="text-xl text-gray-200 max-w-2xl mx-auto">
-              The talented individuals behind Netgain's success.
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+              Talented individuals united by a passion for creating exceptional digital experiences.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {teamMembers.map((member, index) => (
-              <div key={index} className="glass-card border-white/10 p-6 text-center animate-slide-up" style={{ animationDelay: `${index * 100}ms` }}>
-                <Avatar className="w-24 h-24 mx-auto mb-4">
-                  <AvatarImage src={member.image} alt={member.name} />
-                  <AvatarFallback className="bg-gradient-to-r from-amber-500 to-amber-600 text-black text-xl">
-                    {member.name.split(' ').map(n => n[0]).join('')}
-                  </AvatarFallback>
-                </Avatar>
-                <h3 className="text-xl font-semibold text-white mb-1">{member.name}</h3>
-                <p className="text-amber-400 mb-3">{member.role}</p>
-                <p className="text-gray-400 text-sm mb-4">{member.bio}</p>
-                {member.linkedin && (
-                  <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center text-blue-500 hover:text-blue-700 transition-colors" aria-label={`LinkedIn profile of ${member.name}`}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.79-1.75-1.764 0-.974.784-1.764 1.75-1.764s1.75.79 1.75 1.764c0 .974-.784 1.764-1.75 1.764zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.597 2.001 3.597 4.6v5.596z"/></svg>
-                  </a>
-                )}
+              <div
+                key={index}
+                className="glass-card p-8 rounded-2xl border-white/[0.08] hover:border-cyan-400/30 transition-all duration-500 group animate-slide-up"
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                <div className="text-center space-y-4">
+                  <div className="relative inline-block">
+                    <Avatar className="w-32 h-32 mx-auto border-2 border-cyan-400/30 group-hover:border-cyan-400/60 transition-all duration-300">
+                      <AvatarImage src={member.image} alt={member.name} />
+                      <AvatarFallback className="bg-gradient-to-br from-cyan-500/20 to-teal-500/20 text-cyan-400 text-2xl font-bold">
+                        {member.name.split(' ').map(n => n[0]).join('')}
+                      </AvatarFallback>
+                    </Avatar>
+                    <div className="absolute -inset-4 bg-cyan-400/20 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-2xl font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors duration-300">
+                      {member.name}
+                    </h3>
+                    <p className="text-cyan-400 font-medium mb-3">{member.role}</p>
+                    <p className="text-slate-400 text-sm leading-relaxed">{member.bio}</p>
+                  </div>
+
+                  {member.linkedin && (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-4 py-2 rounded-lg glass-button border-white/20 hover:border-cyan-400/30 text-cyan-400 transition-all duration-300 group/link"
+                      aria-label={`LinkedIn profile of ${member.name}`}
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24" className="mr-2">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.79-1.75-1.764 0-.974.784-1.764 1.75-1.764s1.75.79 1.75 1.764c0 .974-.784 1.764-1.75 1.764zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.597 2.001 3.597 4.6v5.596z"/>
+                      </svg>
+                      <span className="text-sm font-medium group-hover/link:translate-x-0.5 transition-transform duration-300">Connect on LinkedIn</span>
+                    </a>
+                  )}
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* What Makes Us Different */}
-      <section className="py-20 bg-royal-900/30">
+      <section className="relative py-24 bg-gradient-to-b from-transparent via-slate-950/30 to-transparent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-serif font-bold text-white mb-4">
-              What Makes Us <span className="text-gradient">Different</span>
-            </h2>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-              Netgain is not just a service provider or a product—it's a brand. A brand that exists to solve your business's digital problems while elevating your vision beyond what you imagine.
-            </p>
-          </div>
-          
-          <div className="glass-card border-white/10 p-8 max-w-3xl mx-auto">
-            <p className="text-gray-300 mb-4">
-              Whether it's building your website, launching your brand digitally, or crafting your next marketing strategy—we're here to bring it all together.
-            </p>
-            <p className="text-gray-300 mb-4">
-              Every project we undertake is a reflection of our dedication to turning ideas into high-impact solutions. With a hands-on approach to problem-solving and a shared commitment to client success, we support development, strategy, and client communication at every step.
-            </p>
-            <p className="text-xl text-amber-400 font-serif text-center mt-8">
-              "Let Netgain be the technical backbone of your business, with a premium touch."
-            </p>
+          <div className="glass-card p-12 md:p-16 rounded-3xl border-white/[0.08] max-w-4xl mx-auto animate-scale-in">
+            <div className="text-center space-y-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-cyan-500/10 to-teal-500/10 border border-cyan-400/20 backdrop-blur-sm">
+                <Sparkles className="h-4 w-4 text-cyan-400" />
+                <span className="text-sm font-medium text-cyan-400">What Sets Us Apart</span>
+              </div>
+
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-white leading-tight">
+                Netgain is More Than a Provider
+              </h2>
+
+              <div className="space-y-4 text-lg text-slate-300 leading-relaxed">
+                <p>
+                  We're a brand that exists to solve your business's digital challenges while elevating your vision beyond imagination.
+                </p>
+                <p>
+                  Whether building your website, launching your brand digitally, or crafting your marketing strategy—we bring it all together with precision and care.
+                </p>
+              </div>
+
+              <div className="pt-6">
+                <blockquote className="text-2xl md:text-3xl font-display text-gradient italic">
+                  "Let Netgain be the technical backbone of your business."
+                </blockquote>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-royal-900/50 to-amber-900/50"></div>
-        <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-serif font-bold text-white mb-6">
-            Ready to Work With Us?
-          </h2>
-          <p className="text-xl text-gray-300 mb-8">
-            Let's discuss how we can help you achieve your digital goals.
-          </p>
-          <Link to="/contact">
-            <Button size="lg" className="glow-button text-lg px-8 py-4">
-              Get in Touch <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
+      <section className="relative py-24">
+        <div className="absolute inset-0 bg-gradient-to-r from-cyan-950/20 to-teal-950/20"></div>
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="glass-card p-12 md:p-16 rounded-3xl border-white/[0.08] text-center space-y-8 animate-scale-in">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-cyan-500/10 to-teal-500/10 border border-cyan-400/20 backdrop-blur-sm">
+              <Sparkles className="h-4 w-4 text-cyan-400" />
+              <span className="text-sm font-medium text-cyan-400">Join Us</span>
+            </div>
+
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-white leading-tight">
+              Ready to Work Together?
+            </h2>
+
+            <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+              Let's discuss how we can help you achieve your digital goals and transform your business.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <Link to="/contact">
+                <Button size="lg" className="glow-button text-base px-8 py-6 group">
+                  <span className="flex items-center">
+                    Get in Touch
+                    <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                  </span>
+                </Button>
+              </Link>
+              <Link to="/services">
+                <Button size="lg" variant="outline" className="glass-button text-base px-8 py-6 border-white/20 text-white hover:text-cyan-400">
+                  Our Services
+                </Button>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </div>
